@@ -2,7 +2,7 @@ import React from 'react';
 import { ScrollText } from 'lucide-react';
 import { CookingPot } from 'lucide-react';
 import { BookmarkCheck } from 'lucide-react';
-const ThreeStates = ({order,cookingTotal}) => {
+const ThreeStates = ({order,cookingTotal,readytotal}) => {
     return <>
     <div className='container flex gap-6 justify-center items-center'>
         <div className='w-80 bg-amber-50/30 border-2 border-dotted border-amber-400/60 rounded-2xl p-6 flex items-center gap-6 mt-10 hover:border-solid hover:bg-amber-50 transition-all duration-300 group'>
@@ -59,7 +59,7 @@ const ThreeStates = ({order,cookingTotal}) => {
     </span>
     <div className='flex items-center gap-2'>
       <h3 className='text-4xl font-black text-slate-800 tracking-tight'>
-        0
+        {readytotal}
       </h3>
       <div className="badge badge-warning badge-outline badge-xs opacity-70 font-bold">LIVE</div>
     </div>
